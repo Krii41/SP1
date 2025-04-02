@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
     <title>Home | Community Science Museum</title>
 </head>
 <body>
@@ -17,8 +18,9 @@
                 <span>Community Science Museum</span>
             </div>
         </a>
+        <button class="mobile-nav" aria-controls="navigation" aria-expanded="false"></button>
         <nav>
-            <ul>
+            <ul data-visible="false" class="navigation flex" id="navigation">
                 <li><a href="explore/index.html">Explore</a></li>
                 <li><a href="exhibitions/index.html">Exhibition Spaces</a></li>
                 <li><a href="events/index.html">Special Events</a></li>
@@ -141,6 +143,9 @@
         </section>
         <span class="molecul"></span>
     </main>
+
+    <script src="index.js"></script>
+   
     <footer>
         <div>
             <div>
@@ -151,7 +156,10 @@
                 </div>
                 <div>
                     <h3>Join Our Newsletter</h3>
-                    <input type="text">
+                    <div>
+                        <input type="text">
+                        <button class="envelope"></button>
+                    </div>
                 </div>
             </div>
             <div>
