@@ -3,6 +3,7 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
     padding: 0;
 }
 
@@ -17,6 +18,10 @@ h2,
 h3 {
     font-family: var(--header-fonts);
     font-weight: 500;
+}
+
+h2 {
+    text-align: center;
 }
 
 .wrap {
@@ -57,11 +62,6 @@ img {
 }
 
 
-
-
-
-
-
 .flex {
     display: flex;
 }
@@ -84,6 +84,74 @@ li {
     flex-direction: row;
     gap: 1em;
 }
+
+.opening-hours {
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.opening-hours > * {
+    justify-content: space-between;
+}
+
+.explore {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: .5em;
+}
+
+.imga {
+    aspect-ratio: 16/13;
+    object-fit: cover;
+}
+
+.explore-wrap {
+    gap: 0.5em;
+}
+
+.explore h3 {
+    text-align: center;
+    padding: .5em;
+}
+
+.for-kids h3 {
+    background-color: var(--yellow-tint);
+}
+
+.for-teachers h3 {
+    background-color: var(--green-tint);
+}
+
+.researchers h3 {
+    background-color: var(--blue-tint);
+}
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 35em) {
     .navigation {
