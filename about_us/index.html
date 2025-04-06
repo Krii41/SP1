@@ -7,20 +7,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/index.css">
     <title>About Us</title>
 </head>
 <body>
     <header>
-        <a href="../index.html">
-            <div class="logo">
-                <img src="../assets/icons/molecul.svg" alt="molecule">
-                <span>Community Science Museum</span>
-            </div>
-        </a>
+        <div class="logo-wrapper">
+            <a href="../index.html">
+                <div class="logo flex">
+                    <img src="../assets/icons/molecule.svg" class="logo-img" alt="molecule">
+                    <span>Community Science Museum</span>
+                </div>
+            </a>
+        </div>
+        <button class="mobile-nav" aria-controls="navigation" aria-expanded="false"></button>
         <nav>
-            <ul>
+            <ul data-visible="false" class="navigation flex background-primary" id="navigation">
                 <li><a href="../explore/index.html">Explore</a></li>
-                <li><a href="../exhibitions/index.html" >Exhibition Spaces</a></li>
+                <li><a href="../exhibitions/index.html">Exhibition Spaces</a></li>
                 <li><a href="../events/index.html">Special Events</a></li>
                 <li><a href="../about_us/index.html" class="active">About Us</a></li>
                 <li><a href="../get_involved/index.html">Get Involved</a></li>
@@ -31,13 +35,15 @@
     <main>
         <div class="introduction-banner">
             <div>
-                <img src="../assets/images/explor.jpg" alt="Boy and two girls looking down and exploring with a magnifying glass and binoculars ">
-            </div>
-            <div>
                 <h1>About Us</h1>
             </div>
+            <div>
+                <img src="../assets/images/explore.jpg" alt="Boy and two girls looking down and exploring with a magnifying glass and binoculars ">
+            </div> 
         </div>
-        <article>
+
+       <div class="container">
+        <article class="content-simple">
             <h2>"Explore together"</h2>
             <p>Come join us at the Community Science Museum where we're committed to making science accessible to all.
             </p>
@@ -51,7 +57,7 @@
                     world around us.
                 </p>
                 <div>
-                    <img src="../assets/images/doodl.jpg" alt="Science word with girl looking flower with magnifying glass on chemistry doodle background">
+                    <img src="../assets/images/doodle.jpg" alt="Science word with girl looking flower with magnifying glass on chemistry doodle background">
                 </div>
             </div>
             <p>We believe science should not be confined to the textbook, but brought to live through exhibits. 
@@ -60,6 +66,47 @@
                 come to life (apart from the dinosaur exhibits - they only come to life at night when everyone's gone home).
             </p>
         </article>
+       </div>
+       <img src="../assets/icons/greenmolecul.svg" class="molecul" alt="Green molecul">
     </main>
+    <script src="../index.js"></script>
+
+    <footer>
+        <div class="footer-container">
+            <div>
+                <div class="social flex">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="../assets/icons/facebook.svg" class="social-icon" alt="Facebook icon">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="../assets/icons/instagram.svg" class="social-icon" alt="Instagram icon">
+                    </a>
+                    <a href="https://www.youtube.com" target="_blank">
+                        <img src="../assets/icons/youtube.svg" class="social-icon" alt="Youtube icon">
+                    </a>
+                </div>
+                <div>
+                    <h3>Join Our Newsletter</h3>
+                    <div>
+                        <input type="text" class="newsletter">
+                        <button class="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3>Visit Us</h3>
+                <p>Community Science Museum</p>
+                <p>Innovasjonsgata 42</p>
+                <p>0167 Oslo</p>
+                <p>Norway</p>
+            </div>
+            <div>
+                <img src="../assets/images/map.jpg" class="map" alt="Street map with red pin and routes">
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Community Science Museum
+        </div>
+    </footer>
 </body>
 </html>        

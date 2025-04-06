@@ -6,16 +6,13 @@
     <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css">
     <title>Home | Community Science Museum</title>
 </head>
 <body>
     <header>
-        <div class="wrap">
+        <div class="logo-wrapper">
             <a href="index.html">
                 <div class="logo flex">
                     <img src="assets/icons/molecule.svg" class="logo-img" alt="molecule">
@@ -42,16 +39,17 @@
             <h1 class="slogan">"Explore together"</h1>
         </section>
         
-    <div class="main-container">
-        <article>
-            <h2>Welcome to the Community Science Museum</h2>
-            <p>Come join us at the Community Science Museum where we're committed to making science accessible to all.
-            </p>
+    <div class="container">
+        <article class="content-simple">
+            <div>
+                <h2>Welcome to the Community Science Museum</h2>
+                <p>Come join us at the Community Science Museum where we're committed to making science accessible to all.
+                </p>
+            </div>
             <div>
                 <img src="assets/images/museum.jpg" class="height" alt="Multicolored modern museum with large, bold letters spelling Museum">
             </div>
         </article>
-        <img src="assets/icons/molecule.svg"  class="molecul right">
         <section>
             <h2>Opening Hours</h2>
             <div class="opening-hours">
@@ -85,7 +83,6 @@
                 </div>
             </div>
         </section>
-        <img src="assets/icons/bluemolecul.svg" class="molecul left" alt="">
         <section>
             <h2>Explore</h2>
             <div class="explore flex">
@@ -112,24 +109,26 @@
             </div>
         </section>
 
-        <section>
-            <h2>Exhibition Spaces</h2>
+        <h2>Exhibition Spaces</h2>
+        <article class="content-colored">
             <div>
                 <div>
                     <img src="assets/images/planets.jpg" alt="An wooden board with a spacethemed background and exhibit with planets and stars in front">
                 </div>
-                <div class="background-yellow">
+                <div class="bg-yellow">
                     <h3>Cosmology</h3>
                     <p>Explore the wonders of our cosmos. Our fantastic exhibition, 'The Sky Above Us', 
                         explores the night sky and what we can see and know about the universe around us.
                     </p>
                 </div>
             </div>
+        </article>
+        <article class="content-colored">  
             <div>
                 <div>
                     <img src="assets/images/group.jpg" alt="Group of young people in VR glasses doing experiments in robotics in a laboratory">
                 </div>
-                <div class="background-green">
+                <div class="bg-green">
                     <h3>Robotics and AI</h3>
                     <p>The information revolution is here and robotics and artificial intelligence are 
                         the science of the future. From useful home applications of AI to industrial uses 
@@ -138,23 +137,23 @@
                 </div>    
             </div>
             <a href="exhibitions/index.html" class="btn-link">All Exhibitions</a>
-        </section>
+        </article>
 
+        <h2>Special Events and Exhibitions</h2>
         <section>
-            <h2>Special Events and Exhibitions</h2>
-            <div>
+            <div class="content-colored">
                 <div>
                     <img src="assets/images/astronaut.jpg" alt="Astronaut sitting in front of the ....">
                 </div>
-                <div class="background-primary">
+                <div class="bg-primary">
                     <h3>Visiting Professor of Aeronautics</h3>
                 </div>
             </div>
-            <div>
+            <div class="content-colored">
                 <div>
                     <img src="assets/images/energetica.jpg" alt="Kids in energetica exhibition discover solarpanels and wind turbines">
                 </div>
-                <div class="background-yellow">
+                <div class="bg-yellow">
                     <h3>Energetica Exhibition on Loan</h3>
                 </div>
             </div>
@@ -170,14 +169,14 @@
         <div class="footer-container">
             <div>
                 <div class="social flex">
-                    <a href="#">
+                    <a href="https://www.facebook.com" target="_blank">
                         <img src="assets/icons/facebook.svg" class="social-icon" alt="Facebook icon">
                     </a>
-                    <a href="#">
-                        <img src="assets/icons/instagram.svg" class="social-icon" alt="">
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="assets/icons/instagram.svg" class="social-icon" alt="Instagram icon">
                     </a>
-                    <a href="#">
-                        <img src="assets/icons/youtube.svg" class="social-icon" alt="">
+                    <a href="https://www.youtube.com" target="_blank">
+                        <img src="assets/icons/youtube.svg" class="social-icon" alt="Youtube icon">
                     </a>
                 </div>
                 <div>

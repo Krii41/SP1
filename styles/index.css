@@ -8,20 +8,26 @@
 }
 
 body {
-    font-family: "Nunito", Arial, Helvetica, sans-serif;
+    font-family: var(--paragraph-font);
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
 
-.main-container {
-    margin: 0 1em;
+.container {
+    margin: 0.5em 1em;
 }
+    
 
 h1,
 h2,
 h3 {
-    font-family: var(--header-fonts);
+    font-family: var(--header-font);
     font-weight: 500;
+    text-align: center;
+}
+
+h2 {
+    margin: 1em 0;
 }
 
 h2,
@@ -29,7 +35,7 @@ h3 {
     text-align: center;
 }
 
-.wrap {
+.logo-wrapper {
     margin: 1.4em 0 1em .5em;
 }
 
@@ -38,7 +44,7 @@ h3 {
 }
 
 .logo {
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-family: var(--header-font);
     font-weight: 500;
     color: var(--primary-color);
     align-items: center;
@@ -53,7 +59,7 @@ h3 {
     position: absolute;
     margin: 0;
     bottom: 0;
-    padding: .5em 0 .5em 3em;
+    padding: .5em 0 .5em 1.5em;
     color: var(--color-white);
     background: rgba(0, 0, 0, 0.5);
     width: 100%;
@@ -61,8 +67,12 @@ h3 {
     
 }
 
+/* molecul */
+
 .molecul {
+    display: block;
     width: 30px;
+    margin: 2em auto 2em auto;
 }
 
 .right {
@@ -83,20 +93,20 @@ img {
     object-fit: cover;
 }
 
-.background-primary {
+.bg-primary {
     background-color: var(--primary-color);
     color: var(--color-white);
 }
 
-.background-yellow {
+.bg-yellow {
     background-color: var(--yellow-tint);
 }
 
-.background-green {
+.bg-green {
     background-color: var(--green-tint);
 }
 
-.background-blue {
+.bg-blue {
     background-color: var(--blue-tint);
 }
 
@@ -128,6 +138,42 @@ li {
     flex-direction: row;
     gap: 1em;
 }
+
+.introduction-banner h1 {
+    color: var(--color-white);
+    background-color: var(--primary-color);
+    padding: .4em 0;
+}
+
+.introduction-banner img {
+    height: 280px;
+    object-fit: cover;
+}
+
+article {
+    margin: 2.5em 0;
+}
+
+.content-simple p{
+   padding-bottom: 1.5em;
+}
+
+.content-colored {
+    margin: 1em 0;
+}
+
+.content-colored h3 {
+    padding: 1em;
+}
+
+.content-colored h2 {
+    padding-top: 1em;
+}
+
+.content-colored p {
+    padding: 0 1em 1.5em 1.2em;
+}
+
 
 .opening-hours {
     max-width: 250px;
@@ -170,26 +216,43 @@ li {
     background-color: var(--blue-tint);
 }
 
+.cta-btn,
 .btn-link {
     display: block;
     text-align: center;
-    margin: 2em auto;
+    margin: 2em auto 3em auto;
     border: 1.5px solid var(--primary-color);
-    font-family: var(--header-fonts);
+    font-family: var(--header-font);
     color: var(--primary-color);
+    background-color: var(--color-white);
     font-weight: 500;
     padding: .5em 1em;
 }
 
+.cta-btn:hover,
 .btn-link:hover {
     border: 1.5px solid var(--blue-tint);
     background-color: var(--blue-tint);
 }
 
+.cta-btn:active,
 .btn-link:active {
     border: 1.5px solid var(--green-tint);
     background-color: var(--green-tint);
 }
+
+.hidden {
+    display: none;
+}
+
+.text-centered {
+    text-align: center;
+}
+
+
+
+
+/* footer */
 
 footer {
     background-color: var(--primary-color);
@@ -219,11 +282,13 @@ footer {
 
 .newsletter {
     border: none;
+    border-radius: 0;
     border-bottom: 1px solid var(--color-white);
     background-color: transparent;
 }
 
 .submit {
+    font-size: .9rem;
     border: none;
     background: transparent;
     color: var(--color-white);
@@ -271,6 +336,7 @@ footer {
         flex-direction: column;
         transform: translateX(200%);
         transition: transform 350ms ease-out;
+        background-color: var(--primary-color);
     }
 
     .navigation[data-visible='true'] {

@@ -7,18 +7,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/index.css">
     <title>Explore</title>
 </head>
 <body>
     <header>
-        <a href="../index.html">
-            <div class="logo">
-                <img src="../assets/icons/molecul.svg" alt="molecule">
-                <span>Community Science Museum</span>
-            </div>
-        </a>
+        <div class="logo-wrapper">
+            <a href="../index.html">
+                <div class="logo flex">
+                    <img src="../assets/icons/molecule.svg" class="logo-img" alt="molecule">
+                    <span>Community Science Museum</span>
+                </div>
+            </a>
+        </div>
+        <button class="mobile-nav" aria-controls="navigation" aria-expanded="false"></button>
         <nav>
-            <ul>
+            <ul data-visible="false" class="navigation flex background-primary" id="navigation">
                 <li><a href="../explore/index.html" class="active">Explore</a></li>
                 <li><a href="../exhibitions/index.html">Exhibition Spaces</a></li>
                 <li><a href="../events/index.html">Special Events</a></li>
@@ -32,14 +36,15 @@
     <main>
         <div class="introduction-banner">
             <div>
-                <img src="../assets/images/sciencegir.jpg" alt="Close-up of little girl with colorful science tubes">
-            </div>
-            <div>
                 <h1>Explore</h1>
             </div>
+            <div>
+                <img src="../assets/images/sciencegirl.jpg" alt="Close-up of little girl with colorful science tubes">
+            </div>   
         </div>
 
-        <article>
+       <div class="container">
+        <article class="content-simple">
             <h2>For Kids</h2>
             <p>Are you a young person looking to learn more about science? Come on down to our museum, 
                 there's plenty to see and do.
@@ -57,15 +62,15 @@
             </p>
             <div>
                 <div>
-                    <img src="../assets/images/robotboa.jpg" alt="Two children operating robotic boat in water tank at engineering lab">
+                    <img src="../assets/images/robotboat.jpg" class="hidden" alt="Two children operating robotic boat in water tank at engineering lab">
                 </div>
                 <div>
-                    <img src="../assets/images/experimen.jpg" alt="Boy and girl experimenting in the laboratory with magnifying glass">
+                    <img src="../assets/images/experiment.jpg" alt="Boy and girl experimenting in the laboratory with magnifying glass">
                 </div>
             </div>
         </article>
 
-        <article>
+        <article class="content-simple">
             <h2>For teachers</h2>
             <p>As a community-driven museum, we want to work with schools to create places of learning 
                 and exploring. Our team are on hand to give your students guided tours of the museum, 
@@ -77,15 +82,15 @@
             </p>
             <div>
                 <div>
-                    <img src="../assets/images/teache.jpg" alt="Teacher carries out chemical experiment with liquid nitrogen with kids">
+                    <img src="../assets/images/teache.jpg" class="hidden" alt="Teacher carries out chemical experiment with liquid nitrogen with kids">
                 </div>
                 <div>
-                    <img src="../assets/images/buildrobo.jpg" alt="Kids using electronic parts to build a robot">
+                    <img src="../assets/images/buildrobot.jpg" alt="Kids using electronic parts to build a robot">
                 </div>
             </div>
         </article>
 
-        <article>
+        <article class="content-simple">
             <h2>Researchers</h2>
             <p>Are you looking to get involved with our team of researchers and academics?</p>
             <p>Our museum offers various ways for you to use our resources and contribute towards them. 
@@ -94,15 +99,56 @@
             </p>
             <div>
                 <div>
-                    <button id="cta-btn">Contact Us</button>
+                    <img src="../assets/images/scientists.jpg" alt="Group of happy scientists holding hands on the gypsum skull behind table">
                 </div>
                 <div>
-                    <img src="../assets/images/scientist.jpg" alt="Group of happy scientists holding hands on the gypsum skull behind table">
+                    <button id="cta-btn" class="cta-btn">Contact Us</button>
                 </div>
             </div>
         </article>
+       </div>
 
     </main>
+
+    <script src="../index.js"></script>
+
+    <footer>
+        <div class="footer-container">
+            <div>
+                <div class="social flex">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="../assets/icons/facebook.svg" class="social-icon" alt="Facebook icon">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="../assets/icons/instagram.svg" class="social-icon" alt="Instagram icon">
+                    </a>
+                    <a href="https://www.youtube.com" target="_blank">
+                        <img src="../assets/icons/youtube.svg" class="social-icon" alt="Youtube icon">
+                    </a>
+                </div>
+                <div>
+                    <h3>Join Our Newsletter</h3>
+                    <div>
+                        <input type="text" class="newsletter">
+                        <button class="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3>Visit Us</h3>
+                <p>Community Science Museum</p>
+                <p>Innovasjonsgata 42</p>
+                <p>0167 Oslo</p>
+                <p>Norway</p>
+            </div>
+            <div>
+                <img src="../assets/images/map.jpg" class="map" alt="Street map with red pin and routes">
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Community Science Museum
+        </div>
+    </footer>
     
 </body>
 </html>
