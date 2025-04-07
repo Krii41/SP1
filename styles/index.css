@@ -57,7 +57,7 @@ h3 {
 
 .slogan {
     position: absolute;
-    margin: 0;
+    margin: auto;
     bottom: 0;
     padding: .5em 0 .5em 1.5em;
     color: var(--color-white);
@@ -69,18 +69,12 @@ h3 {
 
 /* molecul */
 
+.molecul-container {
+   justify-content: flex-end;
+}
+
 .molecul {
-    display: block;
-    width: 30px;
-    margin: 2em auto 2em auto;
-}
-
-.right {
-    float: right;
-}
-
-.left {
-    float: left;
+    width: 35px;
 }
 
 img {
@@ -118,6 +112,10 @@ img {
 nav a {
     color: var(--color-white);
     text-transform: uppercase;
+}
+
+nav {
+    background-color: var(--primary-color);
 }
 
 a {
@@ -216,11 +214,23 @@ article {
     background-color: var(--blue-tint);
 }
 
-.cta-btn,
-.btn-link {
-    display: block;
+.btn-link-container {
     text-align: center;
-    margin: 2em auto 3em auto;
+}
+
+.cta-btn {
+    display: block;
+    margin: 3em auto 3em auto;
+}
+
+.btn-link {
+    display: inline-block;
+    margin: 1em auto 1em auto;
+}
+
+.btn-link,
+.cta-btn {
+    text-align: center;
     border: 1.5px solid var(--primary-color);
     font-family: var(--header-font);
     color: var(--primary-color);
@@ -240,6 +250,9 @@ article {
     border: 1.5px solid var(--green-tint);
     background-color: var(--green-tint);
 }
+
+
+
 
 .hidden {
     display: none;
