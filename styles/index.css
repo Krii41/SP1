@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-    margin: 0.5em 1em;
+    margin: 2em 1.5em;
 }
     
 
@@ -70,11 +70,12 @@ h3 {
 /* molecul */
 
 .molecul-container {
-   justify-content: flex-end;
+   justify-content: center;
+   margin-bottom: 2em;
 }
 
 .molecul {
-    width: 35px;
+    width: 40px;
 }
 
 img {
@@ -152,6 +153,7 @@ article {
     margin: 2.5em 0;
 }
 
+.article-doodle,
 .content-simple p{
    padding-bottom: 1.5em;
 }
@@ -169,7 +171,7 @@ article {
 }
 
 .content-colored p {
-    padding: 0 1em 1.5em 1.2em;
+    padding: 0 1.5em 1.5em 1.5em;
 }
 
 
@@ -314,10 +316,29 @@ footer {
     font-size: .8rem;
     margin: 2em auto;
 }
+
+
     
+.modal {
+    border: 2px solid green;
+}
 
+.modal h2 {
+    color: var(--primary-color);
+}
 
+.btn-close {
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+    color: var(--modal-clr); 
+    float: right;      
+}
 
+form {
+    display: flex;
+    flex-direction: column;
+}
 
 
 
@@ -343,10 +364,11 @@ footer {
     .navigation {
         position: fixed;
         z-index: 9998;
-        inset: 5% 0 0 0;
-        padding: 4rem 2rem;
+        inset: 5em 0 0 0;
+        padding: 3rem 2rem;
         text-align: right;
         flex-direction: column;
+        gap: 1.4em;
         transform: translateX(200%);
         transition: transform 350ms ease-out;
         background-color: var(--primary-color);
