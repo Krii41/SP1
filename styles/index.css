@@ -317,10 +317,24 @@ footer {
     margin: 2em auto;
 }
 
+/*  modal  */
 
     
 .modal {
-    border: 2px solid green;
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--color-white);
+    border: 1px solid var(--modal-clr);
+    border-radius: 0.5em;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 90vw;
+    max-width: 30em;
+    padding: 1.5em;
+    margin: 0 auto;    
 }
 
 .modal h2 {
@@ -328,17 +342,48 @@ footer {
 }
 
 .btn-close {
+    display: block;
     font-size: 1.5rem;
     background-color: transparent;
     border: none;
     color: var(--modal-clr); 
-    float: right;      
+    text-align: right;
 }
 
 form {
     display: flex;
     flex-direction: column;
+    
 }
+
+form input {
+    border: none;
+    border-radius: 0;
+    font-size: 1em;
+    border-bottom: 1px solid var(--modal-clr);
+    margin-bottom: 1em;
+    padding-top: .5em;
+}
+
+.modal label {
+    color: var(--modal-clr);
+}
+.modal textarea {
+    border: 1px solid var(--modal-clr);
+}
+
+.send-btn {
+    font-family: var(--header-font);
+    display: inline-block;
+    margin: 1em auto;
+    background-color: #F46C2D;
+    color: var(--color-white);
+    letter-spacing: .8px;
+    border: none;
+    font-size: 1rem;
+    padding: .5em 2.5em;
+}
+
 
 
 
