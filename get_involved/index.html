@@ -7,6 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <meta name="description" content="Support science education—volunteer, donate, or apply for internships at the Community Science Museum and make a difference.">
+    <meta name="keywords" content="support science, donate to museum, museum internships, volunteer opportunities, community involvement">
+    <meta name="author" content="Urve Kriiva">
     <link rel="stylesheet" href="../styles/index.css">
     <title>Get Involved</title>
 </head>
@@ -42,7 +48,7 @@
             </div>
         </div>
 
-        <div class="container">
+        <div class="content-container">
             <article>
                 <h2>Support</h2>
                 <p>There are various ways you can support the museum. Donations are very welcome and are an 
@@ -70,7 +76,7 @@
             </div>
         </article>
 
-        <div class="container">
+        <div class="content-container">
             <article>
                 <h2>Volunteer</h2>
                 <p>A number of people volunteer their time and effort to keep the displays in good order and 
@@ -86,6 +92,8 @@
         </div>
         <button id="cta-btn" class="cta-btn">Contact Us</button>
     </main>
+
+    <div id="modal" class="modal"></div>
 
     <script src="../index.js"></script>
 
@@ -107,7 +115,7 @@
                     <h3>Join Our Newsletter</h3>
                     <div>
                         <input type="text" class="newsletter">
-                        <button class="submit">Submit</button>
+                        <button class="submit"><i class="fa-regular fa-envelope"></i></button>
                     </div>
                 </div>
             </div>
