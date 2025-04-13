@@ -67,13 +67,67 @@ h3 {
     position: absolute;
     margin: auto;
     bottom: 0;
-    padding: .5em 0 .5em 1.5em;
+    padding: .5em 0 .5em 0;
     color: var(--color-white);
     background: rgba(0, 0, 0, 0.5);
     width: 100%;
     text-transform: uppercase;
-    
 }
+
+.scroller {
+    width: 90%;
+    margin-inline: auto;
+    position: relative;
+    height: 2em;
+    margin: 1.5em auto 0 auto;
+    overflow: hidden;
+}
+
+@keyframes scrollleft {
+    to {
+        left: -200px;
+    }
+}
+
+.scroller > * {
+    font-family: var(--header-font);
+    font-weight: 500;
+    font-size: 1.1rem;
+    display: block;
+    white-space: nowrap;
+    position: absolute;
+    left: 100%;
+    animation-name: scrollleft;
+    animation-duration: 35s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.item1 {
+    animation-delay: calc(35s / 4 * (4 - 1) * -1);
+    color: #C45623;
+}
+
+.item2 {
+    animation-delay: calc(35s / 4 * (4 - 2) * -1);
+    color: #F88A55;
+}
+
+.item3 {
+    animation-delay: calc(35s / 4 * (4 - 3) * -1);
+    color: #C45623;
+}    
+
+.item4 {
+    animation-delay: calc(35s / 4 * (4 - 4) * -1);
+    color: #F88A55;
+}
+
+
+
+
+
+
 
 /* molecul */
 
