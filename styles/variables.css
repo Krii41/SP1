@@ -1,4 +1,5 @@
 :root {
+    --max-width: 1000px;
     --primary-color: #123F64;
     --color-white: #FFFFFF;
     --yellow-tint: #EDC97D;

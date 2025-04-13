@@ -1,0 +1,152 @@
+
+
+@media (max-width: 40em) {
+    .navigation {
+        position: fixed;
+        z-index: 9998;
+        inset: 4em 0 0 0;
+        padding: 3rem 2rem;
+        text-align: right;
+        flex-direction: column;
+        gap: 1.4em;
+        transform: translateX(200%);
+        transition: transform 350ms ease-out;
+        background-color: var(--primary-color);
+    }
+
+    .navigation[data-visible='true'] {
+        transform: translateX(0%);
+    }
+
+    .mobile-nav {
+        display: block;
+        position: absolute;
+        z-index: 9999;
+        background-image: url("../assets/icons/menu.svg");
+        background-color: transparent;
+        background-repeat: no-repeat;
+        padding: 0;
+        border: 0;
+        width: 2rem;
+        aspect-ratio: 1;
+        top: 1.4em;
+        right: 1em;http://127.0.0.1:3000/assets/images/hero.jpg
+    }
+
+    .mobile-nav[aria-expanded="true"] {
+        background-image: url("../assets/icons/close.svg");
+        background-size: cover;
+        background-color: transparent;
+    }
+}
+
+
+@media (min-width: 39em) {
+
+    .logo {
+        justify-content: center;
+    }
+
+    .navigation {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        border: 1px solid white;
+        justify-content: space-around;
+        padding: 1em ;
+    }
+
+    .hero-img {
+        aspect-ratio: 0;
+    }
+
+    .slogan {
+        font-size: 2rem;
+    }
+
+    h2 {
+        margin: .8em 0;
+    }
+
+    .content-container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .hidden {
+        display: block;
+    }
+
+    .introduction-banner {
+        max-width: var(--max-width);
+        margin: 1.5em auto;
+        display: flex;
+    }
+
+    .introduction-banner > * {
+        flex: 1;
+    }
+    
+    .center,
+    .introduction-text {
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+    }
+    
+
+    .opening-hours {
+        max-width: var(--max-width);
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .opening-hours > * {
+        flex-direction: column;
+    }
+
+    .explore {
+        flex-wrap: nowrap;
+    }
+
+    .content-img {
+        display: flex;
+    }
+
+    .content-img > * {
+        flex: 1;
+    }
+
+    .content-img h2 {
+        padding: 0;
+    }
+
+    .reverse {
+        flex-direction: row-reverse;
+    }
+
+    .gap {
+        gap: 1em;
+    }
+
+    .article-doodle {
+        display: flex;
+        align-items: center;
+    }
+
+
+
+
+
+
+   .footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   }
+
+
+
+
+
+
+}

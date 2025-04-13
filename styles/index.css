@@ -105,22 +105,22 @@ h3 {
 
 .item1 {
     animation-delay: calc(35s / 4 * (4 - 1) * -1);
-    color: #C45623;
+    color: #A52908;
 }
 
 .item2 {
     animation-delay: calc(35s / 4 * (4 - 2) * -1);
-    color: #F88A55;
-}
+    color: #C93008;
+}   
 
 .item3 {
     animation-delay: calc(35s / 4 * (4 - 3) * -1);
-    color: #C45623;
+    color: #ED3706;
 }    
 
 .item4 {
     animation-delay: calc(35s / 4 * (4 - 4) * -1);
-    color: #F88A55;
+    color: #FB4A1B;
 }
 
 
@@ -220,19 +220,19 @@ article {
    padding-bottom: 1.5em;
 }
 
-.content-colored {
+.content-img {
     margin: 1em 0;
 }
 
-.content-colored h3 {
+.content-img h3 {
     padding: 1em;
 }
 
-.content-colored h2 {
+.content-img h2 {
     padding-top: 1em;
 }
 
-.content-colored p {
+.content-img p {
     padding: 0 1.5em 1.5em 1.5em;
 }
 
@@ -454,65 +454,6 @@ form input,
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 35em) {
-    .navigation {
-        position: fixed;
-        z-index: 9998;
-        inset: 4em 0 0 0;
-        padding: 3rem 2rem;
-        text-align: right;
-        flex-direction: column;
-        gap: 1.4em;
-        transform: translateX(200%);
-        transition: transform 350ms ease-out;
-        background-color: var(--primary-color);
-    }
-
-    .navigation[data-visible='true'] {
-        transform: translateX(0%);
-    }
-
-    .mobile-nav {
-        display: block;
-        position: absolute;
-        z-index: 9999;
-        background-image: url("../assets/icons/menu.svg");
-        background-color: transparent;
-        background-repeat: no-repeat;
-        padding: 0;
-        border: 0;
-        width: 2rem;
-        aspect-ratio: 1;
-        top: 1.4em;
-        right: 1em;
-    }
-
-    .mobile-nav[aria-expanded="true"] {
-        background-image: url("../assets/icons/close.svg");
-        background-size: cover;
-        background-color: transparent;
-    }
-}
 
 
 
