@@ -57,6 +57,7 @@
 
     .hero-img {
         aspect-ratio: 0;
+        max-height: 480px;
     }
 
     .slogan {
@@ -69,6 +70,11 @@
 
     .content-container {
         max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .content-container-wide {
+        max-width: var(--max-width);
         margin: 0 auto;
     }
 
@@ -105,6 +111,10 @@
         flex-direction: column;
     }
 
+    .opening-hours > div:nth-child {
+        background-color: var(--table-color);
+    }
+
     .explore {
         flex-wrap: nowrap;
     }
@@ -119,6 +129,10 @@
 
     .content-img h2 {
         padding: 0;
+    }
+
+    .content-img img {
+        object-fit: cover;
     }
 
     .reverse {
