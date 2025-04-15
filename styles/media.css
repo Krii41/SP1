@@ -53,6 +53,12 @@
         border: 1px solid white;
         justify-content: space-around;
         padding: 1em ;
+        letter-spacing: 1px;
+    }
+
+    .active {
+        text-decoration: underline;
+        text-underline-offset: 4px;
     }
 
     .hero-img {
@@ -119,10 +125,14 @@
         flex-wrap: nowrap;
     }
 
+
+    .clr-background,
     .content-img {
         display: flex;
+        border: 1px solid red;
     }
-
+    
+    .clr-background > *,
     .content-img > * {
         flex: 1;
     }
@@ -133,6 +143,10 @@
 
     .content-img img {
         object-fit: cover;
+    }
+
+    .lola {
+        align-items: center;
     }
 
     .reverse {
@@ -148,7 +162,14 @@
         align-items: center;
     }
 
+    .text-right {
+        padding-left: 1.5em;
+   
+    }
 
+    .text-left {
+        padding-right: 1.5em;
+    }
 
 
 

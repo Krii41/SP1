@@ -220,6 +220,8 @@ article {
    padding-bottom: 1.5em;
 }
 
+
+
 .content-img {
     margin: 1em 0;
 }
@@ -228,13 +230,32 @@ article {
     padding: 1em;
 }
 
-.content-img h2 {
+.content-img p {
+    padding-bottom: 1.5em;
+}
+
+
+.clr-background {
+    margin: 1em 0;
+}
+
+.clr-background h3 {
+    padding: 1em;
+}
+
+.clr-background h2 {
     padding-top: 1em;
 }
 
-.content-img p {
+.clr-background p {
     padding: 0 1.5em 1.5em 1.5em;
 }
+
+
+
+
+
+
 
 
 .opening-hours {
