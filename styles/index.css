@@ -81,6 +81,7 @@ h3 {
     height: 2em;
     margin: 1.5em auto 0 auto;
     overflow: hidden;
+    color: var(--scroller-clr);
 }
 
 @keyframes scrollleft {
@@ -105,22 +106,18 @@ h3 {
 
 .item1 {
     animation-delay: calc(35s / 3 * (3 - 1) * -1);
-    color: #A52908;
 }
 
 .item2 {
     animation-delay: calc(35s / 3 * (3 - 2) * -1);
-    color: #C93008;
 }   
 
 .item3 {
     animation-delay: calc(35s / 3 * (3 - 3) * -1);
-    color: #ED3706;
 }    
 
 .item4 {
     animation-delay: calc(35s / 4 * (4 - 4) * -1);
-    color: #FB4A1B;
 }
 
 

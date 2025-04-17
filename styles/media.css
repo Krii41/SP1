@@ -73,33 +73,32 @@
         margin: .8em 0;
     }
 
+    .scroller {
+        max-width: var(--max-width);
+    }
+
     .scroller span {
         font-size: 1.3rem;
     }
 
     .item1 {
         animation-delay: calc(35s / 5 * (5 - 1) * -1);
-        color: #A52908;
     }
     
     .item2 {
-        animation-delay: calc(35s / 5 * (5 - 2) * -1);
-        color: #C93008;
+        animation-delay: calc(35s / 5 * (5 - 2) * -1);   
     }   
     
     .item3 {
         animation-delay: calc(35s / 5 * (5 - 3) * -1);
-        color: #ED3706;
     }    
     
     .item4 {
         animation-delay: calc(35s / 5 * (5 - 4) * -1);
-        color: #f85c31;
     }
 
     .item5 {
         animation-delay: calc(35s / 5 * (5 - 5) * -1);
-        color: #f97f5e;
     }
 
     .content-container {
