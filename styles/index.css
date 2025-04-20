@@ -393,6 +393,10 @@ footer {
     gap: .5em;
 }
 
+.newsletter-form input {
+    text-align: center;
+}
+
 .newsletter {
     border: none;
     border-radius: 0;

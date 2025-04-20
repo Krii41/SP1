@@ -120,11 +120,34 @@
         display: block;
     }
 
-    .molecul {
+    .molecule-container {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .molecule-two {
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 50px;
+        height: 50px;
         width: 50px;
     }
 
-    
+    .yellow {
+        background-image: url("../assets/icons/yellow-molecul.png");
+    }
+
+    .green {
+        background-image: url("../assets/icons/green-molecul.png");
+    }
+
+    .blue {
+        background-image: url("../assets/icons/blue-molecul.png");
+    }
+
+    .molecul {
+        width: 50px;
+    }
 
     .introduction-banner {
         max-width: var(--max-width);
