@@ -81,7 +81,7 @@ h3 {
     height: 2em;
     margin: 1.5em auto 0 auto;
     overflow: hidden;
-    color: var(--scroller-clr);
+    color: var(--info-clr);
 }
 
 @keyframes scrollleft {
@@ -128,13 +128,7 @@ h3 {
 
 /* molecul */
 
-.molecul-container {
-   justify-content: center;
-}
 
-.molecul {
-    width: 40px;
-}
 
 img {
     width: 100%;
@@ -336,8 +330,9 @@ article {
 .bold-txt {
     font-family: var(--header-font);
     text-transform: uppercase;
-    color: #17a2b8;
+    color: var(--info-clr);
     font-weight: 500;
+    font-size: 18px;
     text-align: center;
 }
 

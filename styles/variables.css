@@ -9,7 +9,10 @@
     --orange-tint: #F46C2D;
     --table-color: #8AC4D0;
     --modal-clr: #898686;
-    --scroller-clr: #C93008;
+    --info-clr: #C93008;
     --header-font: "Poppins", Arial, Helvetica, sans-serif;
     --paragraph-font: "Nunito",  Arial, Helvetica, sans-serif;
+    --molecule-yellow: url("../assets/icons/yellow-molecul.png");
+    --molecule-blue: url("../assets/icons/blue-molecul.png");
+    --molecule-green: url("../assets/icons/green-molecul.png");
 }

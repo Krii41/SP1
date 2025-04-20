@@ -47,6 +47,10 @@
         justify-content: center;
     }
 
+    body {
+        font-size: 18px;
+    }
+
     .navigation {
         max-width: var(--max-width);
         margin: 0 auto;
@@ -120,29 +124,62 @@
         display: block;
     }
 
-    .molecule-container {
+    .flex {
         display: flex;
-        justify-content: flex-end;
     }
 
-    .molecule-two {
+    .flex-right {
+       justify-content: flex-end;
+    }
+
+    .flex-center {
+       justify-content: center;
+    }
+
+    
+
+    .molecule-header {
+        position: relative;
+        margin: 3em 0 3em 0;
+        
+    }
+
+    .molecule-container-left,
+    .molecule-container-right {
+        position: absolute;
+    }
+
+    .molecule-container {
+        justify-content: center;
+    }
+
+    .molecul-container-left {
+        top: 0;
+        left: 0;
+    }
+
+    .molecule-container-right {
+        top: 0;
+        right: 0;
+    }
+
+    .molecule {
         background-repeat: no-repeat;
         background-size: cover;
         width: 50px;
         height: 50px;
-        width: 50px;
     }
 
     .yellow {
-        background-image: url("../assets/icons/yellow-molecul.png");
+        background-image: var(--molecule-yellow);
     }
 
     .green {
-        background-image: url("../assets/icons/green-molecul.png");
+        background-image: var(--molecule-green);
     }
 
     .blue {
-        background-image: url("../assets/icons/blue-molecul.png");
+        background-image: var(--molecule-blue);
     }
 
     .molecul {
@@ -168,6 +205,7 @@
     
 
     .opening-hours {
+        font-size: 16px;
         max-width: var(--max-width);
         text-align: center;
         display: flex;
@@ -186,6 +224,10 @@
 
     .explore {
         flex-wrap: nowrap;
+    }
+
+    .future-events {
+        font-size: 1.6rem;
     }
 
     .btn-link,
