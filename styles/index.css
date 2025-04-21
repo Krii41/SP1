@@ -128,7 +128,28 @@ h3 {
 
 /* molecul */
 
+.molecule-container {
+    justify-content: center;
+}
 
+.molecule-small {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+}
+
+.yellow {
+    background-image: var(--molecule-yellow);
+}
+
+.green {
+    background-image: var(--molecule-green);
+}
+
+.blue {
+    background-image: var(--molecule-blue);
+}
 
 img {
     width: 100%;
@@ -257,13 +278,19 @@ article {
     justify-content: space-between;
 }
 
+#kids,
+#teachers,
+#researchers {
+    scroll-margin-top: 1em; 
+}
+
 .explore {
     flex-direction: row;
     flex-wrap: wrap;
     gap: .5em;
 }
-
-.imga {
+.for-kids img,
+.for-teachers img {
     aspect-ratio: 16/13;
     object-fit: cover;
 }
@@ -273,6 +300,7 @@ article {
 }
 
 .explore h3 {
+    color: #000000;
     text-align: center;
     padding: .5em;
 }
