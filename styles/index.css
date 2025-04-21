@@ -416,8 +416,17 @@ footer {
     gap: .5em;
 }
 
-.newsletter-form input {
+.newsletter {
     text-align: center;
+}
+
+.newsletter:focus,
+.newsletter:valid,
+.newsletter:not(:placeholder-shown) {
+  border: none;
+  border-bottom: 1px solid var(--color-white);
+  outline: none;
+  box-shadow: none;
 }
 
 .newsletter {
