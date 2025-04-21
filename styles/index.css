@@ -17,7 +17,6 @@ body {
     margin: 2em 1.5em;
 }
     
-
 h1,
 h2,
 h3 {
@@ -30,17 +29,10 @@ h2 {
     margin: 1em 0;
 }
 
-h2,
-h3 {
-    text-align: center;
-}
+/*  logo/navigation  */
 
-.logo-wrapper {
+.logo-container {
     margin: 1.4em 0 1em .5em;
-}
-
-.logo-img {
-    width: 28px;
 }
 
 .logo {
@@ -51,136 +43,8 @@ h3 {
     gap: .5em;
 }
 
-.hero {
-    position: relative;
-}
-
-.hero-img {
-    object-fit: cover;
-    aspect-ratio: 1;
-}
-
-
-
-
-.slogan {
-    position: absolute;
-    margin: auto;
-    bottom: 0;
-    padding: .5em 0 .5em 0;
-    color: var(--color-white);
-    background: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    text-transform: uppercase;
-}
-
-.scroller {
-    width: 90%;
-    margin-inline: auto;
-    position: relative;
-    height: 2em;
-    margin: 1.5em auto 0 auto;
-    overflow: hidden;
-    color: var(--info-clr);
-}
-
-@keyframes scrollleft {
-    to {
-        left: -200px;
-    }
-}
-
-.scroller > * {
-    font-family: var(--header-font);
-    font-weight: 500;
-    font-size: 1.1rem;
-    display: block;
-    white-space: nowrap;
-    position: absolute;
-    left: 100%;
-    animation-name: scrollleft;
-    animation-duration: 35s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-
-.item1 {
-    animation-delay: calc(35s / 3 * (3 - 1) * -1);
-}
-
-.item2 {
-    animation-delay: calc(35s / 3 * (3 - 2) * -1);
-}   
-
-.item3 {
-    animation-delay: calc(35s / 3 * (3 - 3) * -1);
-}    
-
-.item4 {
-    animation-delay: calc(35s / 4 * (4 - 4) * -1);
-}
-
-
-
-
-
-
-
-/* molecul */
-
-.molecule-container {
-    justify-content: center;
-}
-
-.molecule-small {
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 40px;
-    height: 40px;
-}
-
-.yellow {
-    background-image: var(--molecule-yellow);
-}
-
-.green {
-    background-image: var(--molecule-green);
-}
-
-.blue {
-    background-image: var(--molecule-blue);
-}
-
-img {
-    width: 100%;
-    display: block;
-}
-
-.height {
-    max-height: 230px;
-    object-fit: cover;
-}
-
-.bg-primary {
-    background-color: var(--primary-color);
-    color: var(--color-white);
-}
-
-.bg-yellow {
-    background-color: var(--yellow-tint);
-}
-
-.bg-green {
-    background-color: var(--green-tint);
-}
-
-.bg-blue {
-    background-color: var(--blue-tint);
-}
-
-
-.flex {
-    display: flex;
+.logo-img {
+    width: 28px;
 }
 
 nav a {
@@ -211,6 +75,136 @@ li {
     gap: 1em;
 }
 
+.hero {
+    position: relative;
+}
+
+/*  hero image / scroller  */
+
+.hero-img {
+    object-fit: cover;
+    aspect-ratio: 1;
+}
+
+.slogan {
+    position: absolute;
+    margin: auto;
+    bottom: 0;
+    padding: .5em 0 .5em 0;
+    color: var(--color-white);
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.scroller {
+    width: 90%;
+    margin-inline: auto;
+    position: relative;
+    height: 2em;
+    margin: 1.5em auto 0 auto;
+    overflow: hidden;
+    color: var(--info-clr);
+}
+
+.scroller > * {
+    font-family: var(--header-font);
+    font-weight: 500;
+    font-size: 1.1rem;
+    display: block;
+    white-space: nowrap;
+    position: absolute;
+    left: 100%;
+    animation-name: scrollleft;
+    animation-duration: 35s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scrollleft {
+    to {
+        left: -200px;
+    }
+}
+
+.item1 {
+    animation-delay: calc(35s / 3 * (3 - 1) * -1);
+}
+
+.item2 {
+    animation-delay: calc(35s / 3 * (3 - 2) * -1);
+}   
+
+.item3 {
+    animation-delay: calc(35s / 3 * (3 - 3) * -1);
+}    
+
+.item4 {
+    animation-delay: calc(35s / 4 * (4 - 4) * -1);
+}
+
+/* molecul */
+
+.molecule-container {
+    justify-content: center;
+}
+
+.molecule-small {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+}
+
+.yellow {
+    background-image: var(--molecule-yellow);
+}
+
+.green {
+    background-image: var(--molecule-green);
+}
+
+.blue {
+    background-image: var(--molecule-blue);
+}
+
+/*  article */
+
+.hidden {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.height {
+    max-height: 230px;
+    object-fit: cover;
+}
+
+.bg-primary {
+    background-color: var(--primary-color);
+    color: var(--color-white);
+}
+
+.bg-yellow {
+    background-color: var(--yellow-tint);
+}
+
+.bg-green {
+    background-color: var(--green-tint);
+}
+
+.bg-blue {
+    background-color: var(--blue-tint);
+}
+
 .introduction-banner h1 {
     color: var(--color-white);
     background-color: var(--primary-color);
@@ -231,8 +225,6 @@ article {
    padding-bottom: 1.5em;
 }
 
-
-
 .content-img {
     margin: 1em 0;
 }
@@ -244,7 +236,6 @@ article {
 .content-img p {
     padding-bottom: 1.5em;
 }
-
 
 .clr-background {
     margin: 1em 0;
@@ -261,13 +252,6 @@ article {
 .clr-background p {
     padding: 0 1.5em 1.5em 1.5em;
 }
-
-
-
-
-
-
-
 
 .opening-hours {
     max-width: 250px;
@@ -289,6 +273,7 @@ article {
     flex-wrap: wrap;
     gap: .5em;
 }
+
 .for-kids img,
 .for-teachers img {
     aspect-ratio: 16/13;
@@ -317,9 +302,24 @@ article {
     background-color: var(--blue-tint);
 }
 
+.bold-txt {
+    font-family: var(--header-font);
+    text-transform: uppercase;
+    color: var(--info-clr);
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+}
+
+.text-centered {
+    text-align: center;
+}
+
 .btn-link-container {
     text-align: center;
 }
+
+/*  buttons/links  */
 
 .cta-btn {
     display: block;
@@ -354,27 +354,6 @@ article {
     border: 1.5px solid var(--green-tint);
     background-color: var(--green-tint);
 }
-
-.bold-txt {
-    font-family: var(--header-font);
-    text-transform: uppercase;
-    color: var(--info-clr);
-    font-weight: 500;
-    font-size: 18px;
-    text-align: center;
-}
-
-
-.hidden {
-    display: none;
-}
-
-.text-centered {
-    text-align: center;
-}
-
-
-
 
 /* footer */
 
@@ -490,8 +469,7 @@ footer {
 
 form {
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;   
 }
 
 form input {
@@ -505,6 +483,7 @@ form input {
 .modal label {
     color: var(--modal-clr);
 }
+
 .modal textarea {
     border: 1px solid var(--modal-clr);
     padding: 1em;

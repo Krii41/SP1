@@ -41,7 +41,7 @@
 }
 
 
-@media (min-width: 39em) {
+@media (min-width: 40em) {
 
     .logo {
         justify-content: center;
@@ -144,8 +144,7 @@
 
     .molecule-header {
         position: relative;
-        margin: 3em 0 3em 0;
-        
+        margin: 3em 0 3em 0;    
     }
 
     .molecule-container-left,
@@ -157,7 +156,7 @@
         justify-content: center;
     }
 
-    .molecul-container-left {
+    .molecule-container-left {
         top: 0;
         left: 0;
     }
@@ -186,10 +185,6 @@
         background-image: var(--molecule-blue);
     }
 
-    .molecul {
-        width: 50px;
-    }
-
     .introduction-banner {
         max-width: var(--max-width);
         margin: 1.5em auto;
@@ -207,7 +202,6 @@
         justify-content: center;
     }
     
-
     .opening-hours {
         font-size: 16px;
         max-width: var(--max-width);
@@ -244,7 +238,6 @@
         margin: 1em auto 3em auto;
     }
 
-
     .clr-background,
     .content-img {
         display: flex;
@@ -272,9 +265,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-
     }
-
 
     .reverse {
         flex-direction: row-reverse;
@@ -292,43 +283,40 @@
 
     .text-right {
         padding-left: 1.5em;
-   
     }
 
     .text-left {
         padding-right: 1.5em;
     }
 
-
    footer {
-    margin-top: 2.5em;
+        margin-top: 2.5em;
    }
 
    .footer-container {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding-bottom: 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr );
-    grid-template-areas: 
-       "social map location";
-    align-items: center;
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding-bottom: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr );
+        grid-template-areas: 
+           "social map location";
+        align-items: center;
    }
 
    .social-container {
-    grid-area: social;
+        grid-area: social;
    }
 
    .location {
-    grid-area: location;
+        grid-area: location;
    }
 
    .map-img {
-    grid-area: map;
+        grid-area: map;
    }
 
    .social {
-    margin-bottom: 1.8em;
+        margin-bottom: 1.8em;
    }
-
 }
