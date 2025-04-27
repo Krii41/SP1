@@ -67,7 +67,7 @@
 
     .hero-img {
         aspect-ratio: 0;
-        max-height: 480px;
+        max-height: 30em;
     }
 
     .slogan {

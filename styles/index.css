@@ -29,6 +29,10 @@ h2 {
     margin: 1em 0;
 }
 
+.hidden {
+    display: none;
+}
+
 /*  logo/navigation  */
 
 .logo-container {
@@ -75,11 +79,11 @@ li {
     gap: 1em;
 }
 
+/*  hero image / scroller  */
+
 .hero {
     position: relative;
 }
-
-/*  hero image / scroller  */
 
 .hero-img {
     object-fit: cover;
@@ -170,10 +174,6 @@ li {
 
 /*  article */
 
-.hidden {
-    display: none;
-}
-
 .flex {
     display: flex;
 }
@@ -218,6 +218,10 @@ img {
 
 article {
     margin: 2.5em 0;
+}
+
+article p {
+    text-wrap: pretty;
 }
 
 .article-doodle,
@@ -343,10 +347,14 @@ article {
     padding: .5em 1em;
 }
 
-.cta-btn:hover,
 .btn-link:hover {
     border: 1.5px solid var(--blue-tint);
     background-color: var(--blue-tint);
+}
+
+.cta-btn:hover {
+    border: 1.5px solid var(--bright-yellow);
+    background-color: var(--bright-yellow);
 }
 
 .cta-btn:active,
@@ -505,6 +513,11 @@ form input,
     border: none;
     font-size: 1rem;
     padding: .5em 2.5em;
+}
+
+.send-btn:hover {
+    color: #000000;
+    background-color: var(--green-tint);
 }
 
 
