@@ -5,7 +5,7 @@ const ctaBtn = document.getElementById("cta-btn");
 
 
 
-navToggle.addEventListener("click", () => {
+navToggle.addEventListener("click", function() {
     const visibility = navMenu.getAttribute("data-visible");
 
     if (visibility === "false") {
@@ -34,6 +34,7 @@ if (ctaBtn) {
         `
     ;
         modal.style.display = "flex";
+        document.body.style.overflow = "hidden";
     
         const btnClose = document.getElementById("btn-close");
         const sendBtn = document.getElementById("send-btn");
@@ -41,6 +42,7 @@ if (ctaBtn) {
     
         btnClose.addEventListener("click", function(){
             modal.style.display = "none";
+            document.body.style.overflow = "auto";
         });
     
         contactForm.addEventListener("submit",function(e) {
@@ -54,11 +56,10 @@ if (ctaBtn) {
             ;
             setTimeout(function() {
                 modal.style.display = "none";
+                document.body.style.overflow = "auto";
               }, 1500);
         });
-    
     });
-
 };
 
 

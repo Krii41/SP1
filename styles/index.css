@@ -342,6 +342,7 @@ article p {
     font-family: var(--header-font);
     color: var(--primary-color);
     background-color: var(--color-white);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-size: 1rem;
     font-weight: 500;
     padding: .5em 1em;
@@ -350,11 +351,13 @@ article p {
 .btn-link:hover {
     border: 1.5px solid var(--blue-tint);
     background-color: var(--blue-tint);
+    transition: var(--hover-effect);
 }
 
 .cta-btn:hover {
     border: 1.5px solid var(--bright-yellow);
     background-color: var(--bright-yellow);
+    transition: var(--hover-effect);
 }
 
 .cta-btn:active,
@@ -451,6 +454,7 @@ footer {
     position: fixed;
     top: 50%;
     left: 50%;
+    z-index: 9999;
     transform: translate(-50%, -50%);
     background-color: var(--color-white);
     border: 1px solid var(--modal-clr);
@@ -473,6 +477,11 @@ footer {
     border: none;
     color: var(--modal-clr); 
     text-align: right;
+}
+
+.btn-close:hover,
+.btn-close:active {
+    color: #555454;
 }
 
 form {
@@ -509,6 +518,7 @@ form input,
     margin: 1em auto;
     background-color: #F46C2D;
     color: var(--color-white);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     letter-spacing: .8px;
     border: none;
     font-size: 1rem;
@@ -518,6 +528,7 @@ form input,
 .send-btn:hover {
     color: #000000;
     background-color: var(--green-tint);
+    transition: var(--hover-effect);
 }
 
 
